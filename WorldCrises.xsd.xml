@@ -85,7 +85,7 @@
     
     <xsd:simpleType name="PlaceIDType">
         <xsd:restriction base="IDType">
-            <xsd:pattern value="PLA_[A-Z]{6}" />
+            <xsd:pattern value="PLC_[A-Z]{6}" />
         </xsd:restriction>
     </xsd:simpleType>
     

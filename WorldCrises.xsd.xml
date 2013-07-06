@@ -30,8 +30,9 @@
                     </xsd:sequence>
                 </xsd:complexType>
             </xsd:element>
-            <xsd:element name="PlaceID" type="PlaceIDType"  minOccurs="1" maxOccurs="unbounded" />
+            <xsd:element name="PlaceID" type="PlaceIDType"  minOccurs="0" maxOccurs="unbounded" />
             <xsd:element name="Year" type="xsd:gYear" minOccurs="1" maxOccurs="1" />
+	    <xsd:element name="SiteText" type="DescriptionType" minOccurs="1" maxOccurs="1" />
             <!-- More elements here -->
         </xsd:sequence>
         <xsd:attribute name="ID" type="CrisisIDType" use="required" />
@@ -42,7 +43,7 @@
         <xsd:sequence>
             <xsd:element name="Born" type="xsd:gYear" minOccurs="0" maxOccurs="1" />
             <xsd:element name="Office" type="xsd:token" minOccurs="0" maxOccurs="1" />
-            <xsd:element name="Description" type="DescriptionType" minOccurs="0" maxOccurs="1" />
+            <xsd:element name="SiteText" type="DescriptionType" minOccurs="1" maxOccurs="1" />
             <!-- More elements here -->
         </xsd:sequence>
         <xsd:attribute name="ID" type="PersonIDType" use="required" />
@@ -52,6 +53,7 @@
     <xsd:complexType name="OrgType">
         <xsd:sequence>
             <xsd:element name="OrgHeadID" type="PersonIDType" minOccurs="0" maxOccurs="1" />
+	    <xsd:element name="SiteText" type="DescriptionType" minOccurs="1" maxOccurs="1" />
             <!-- More elements here -->
         </xsd:sequence>
         <xsd:attribute name="ID" type="OrgIDType" use="required"/>
@@ -59,6 +61,7 @@
     </xsd:complexType>
 
     <xsd:complexType name="PlaceType">
+	<xsd:element name="SiteText" type="DescriptionType" minOccurs="1" maxOccurs="1" />
         <!-- Add elements here -->
         <xsd:attribute name="ID" type="PlaceIDType" use="required" />
         <xsd:attribute name="Name" type="xsd:token" use="required" />

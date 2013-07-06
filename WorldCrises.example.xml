@@ -70,6 +70,11 @@
                 <!-- Put feed URL here and embed on your site in your own cool way-->
                 <li embed="[WHATEVER A FEED URL LOOKS LIKE]" />
             </Feeds>
+
+            <!-- Optional summary field for extra random data -->
+            <Summary>
+              Lorem ipsum...
+            </Summary>
         </Common>
     </Crisis>
     

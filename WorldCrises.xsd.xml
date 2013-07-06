@@ -166,6 +166,7 @@
                 <xsd:complexType mixed="true">
                     <xsd:attribute name="href" type="xsd:token" />
                     <xsd:attribute name="embed" type="xsd:token" />
+                    <xsd:attribute name="text" type="xsd:token" />
                 </xsd:complexType>
             </xsd:element>
         </xsd:sequence>

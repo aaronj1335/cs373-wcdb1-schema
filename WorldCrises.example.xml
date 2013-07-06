@@ -53,7 +53,7 @@
             <!-- hrefs optional in the following depending on how you want them to behave on your site -->
             <Images>
                 <!-- Put full URLs to images here, display them on your site in your own cool way -->
-                <li embed="http://images.jagran.com/ukhand-ss-02-07-13.jpg" />
+                <li embed="http://images.jagran.com/ukhand-ss-02-07-13.jpg" text="This is the alt element of the image." />
                 <li embed="http://timesofindia.indiatimes.com/photo/15357310.cms" />
             </Images>
             <Videos>
